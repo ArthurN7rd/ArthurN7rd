@@ -1,7 +1,12 @@
 html{
     font-family:sans-serif;
 }
-body {
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.tudo{
     max-width: 1310px;
     margin: 0 auto;
   }
