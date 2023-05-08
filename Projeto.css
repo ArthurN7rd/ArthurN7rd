@@ -1,5 +1,6 @@
 html{
-    font-family:sans-serif;
+    font-family:Verdana, Tahoma, Arial,  sans-serif;
+
 }
 
 body{
@@ -12,13 +13,16 @@ body{
   }
 
 h1{
-    font-size: 3em;
+    font-size: 50px;
     color: #170F49;
+    letter-spacing: 1.5x;
 }
 
 h2{
-    font-size: 1.5em;
+    font-size: 16px;
     color: #4A3AFF; 
+    letter-spacing: 4px;
+    margin-bottom: -15px;
 }
 
 h3{
@@ -27,8 +31,25 @@ h3{
     color: #170F49;
 }
 
+h4{
+    font-size: 24px;
+    color: black;
+}
+
+h5{
+    font-size: 18px;
+    color: #6F6C90;
+}
+
+h6{
+    font-size: 54px;
+    color: black;
+    margin: 10px;
+}
+
 p{
     color: #6F6C90;
+    font-size: 18px;
 }
 
 .flex{
@@ -47,6 +68,14 @@ p{
     box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
     border-radius: 56px;
     color: white;
+    border: 0;
+}
+
+.button-alternat{
+    background: white;
+    box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
+    border-radius: 56px;
+    color: #4A3AFF;
     border: 0;
 }
 
@@ -97,3 +126,102 @@ label input:checked + span::before{
     background: #eee;
 }
 /* b3 */
+
+.main-header-top button{
+    margin: 50px;
+    margin-left: 700px;
+}
+
+.main-section-email{
+    background: #e4e4e4;
+    padding: 10px;
+    margin-left: 380px;
+    margin-right: 380px;
+    border-radius: 180px;
+}
+
+.main-section-email button{
+    margin-left: 17px;
+}
+
+.main-section-email input{
+    padding: 10px 199px 10px 0;
+    border-radius: 20px;
+    border: none;
+}
+
+.text-center span{
+    color: #4A3AFF;
+}
+
+.main-header-div{
+    background: #e4e4e4;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding: 12px;
+    border-radius: 17px;
+}
+
+
+.main-header-div p{
+    margin-left: 700px;
+}
+
+.main-section-decisao p{
+    color: black;
+}
+
+.main-section-decisao input{
+    display: none;
+}
+
+.pm{
+    margin-right: 30px;
+}
+
+
+.main-painel-of-1{
+    background: #e4e4e4;
+    border-radius: 25px;
+    padding: 50px 50px;
+}
+
+.main-painel-of-1-black{
+    color: black;
+}
+
+.main-painel-of-2{
+    background: #4A3AFF;
+    border-radius: 25px;
+    padding: 50px 50px;
+}
+
+.main-painel-of-2-white{
+    color:white
+}
+
+.main-painel-of-2 button{
+    padding: 20px 99px;
+    margin-left: 15px;
+}
+
+.main-painel-of-1 button{
+    padding: 20px 99px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+/* Grid */
+
+.col-3{
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    
+}
