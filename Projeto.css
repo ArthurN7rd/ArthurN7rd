@@ -34,6 +34,7 @@ h3{
 h4{
     font-size: 24px;
     color: black;
+    margin-top: -25px;
 }
 
 h5{
@@ -133,8 +134,8 @@ label input:checked + span::before{
 }
 
 .main-section-email{
-    background: #e4e4e4;
-    padding: 10px;
+    background: #e4e4e9;
+    padding: 10px 0 10px 0px;
     margin-left: 380px;
     margin-right: 380px;
     border-radius: 180px;
@@ -145,7 +146,7 @@ label input:checked + span::before{
 }
 
 .main-section-email input{
-    padding: 10px 199px 10px 0;
+    padding: 10px 150px 10px 20px;
     border-radius: 20px;
     border: none;
 }
@@ -155,16 +156,20 @@ label input:checked + span::before{
 }
 
 .main-header-div{
-    background: #e4e4e4;
+    background: #e4e4e9;
     margin-left: 110px;
     margin-right: 110px;
     padding: 12px;
     border-radius: 17px;
+    margin-top: 100px;
 }
 
-
-.main-header-div p{
+ .p1{
     margin-left: 700px;
+}
+
+.p2{
+    margin-left: 600px;
 }
 
 .main-section-decisao p{
@@ -181,9 +186,13 @@ label input:checked + span::before{
 
 
 .main-painel-of-1{
-    background: #e4e4e4;
+    background: #e4e4e9;
     border-radius: 25px;
     padding: 50px 50px;
+}
+
+.main-painel-of-1-1{
+    margin-top: 100px;
 }
 
 .main-painel-of-1-black{
@@ -210,18 +219,43 @@ label input:checked + span::before{
     margin-left: 15px;
 }
 
+.main-painel-titulo{
+    float: left;
+    margin-left: 90px;
+    margin-top: -80px;
+}
 
+.imag{
+    background: #e4e4e9;
+    padding: 10px 10px 10px 10px;
+    margin-right: 230px;
+    border-radius: 10px;
+}
 
+.imag-1-1{
+    display: flex;
+}
 
+.monthly-float{
+    float: left;
+    margin-left: 140px;
+    margin-top: -40px;
+}
 
-
+.monthly-float-1{
+    float: left;
+    margin-left: 110px;
+    margin-top: -40px;
+}
 
 
 /* Grid */
 
 .col-3{
     width: 30%;
-    float: left;
-    margin-left: 3%;
-    
+    margin-left: 1%;
 }
+
+
+
+
