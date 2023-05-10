@@ -12,6 +12,12 @@ body{
     margin: 0 auto;
   }
 
+footer{
+    float: left;
+    margin-top: -150px;
+    margin-left: 60px;
+}
+
 h1{
     font-size: 50px;
     color: #170F49;
@@ -128,6 +134,21 @@ label input:checked + span::before{
 }
 /* b3 */
 
+.b4{
+    float: left;
+    margin-top: 15px;
+}
+
+.b5{
+    background: #FF2D46;
+    box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
+    border-radius: 56px;
+    color: white;
+    border: 0;
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
 .main-header-top button{
     margin: 50px;
     margin-left: 700px;
@@ -162,6 +183,7 @@ label input:checked + span::before{
     padding: 12px;
     border-radius: 17px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
  .p1{
@@ -189,6 +211,7 @@ label input:checked + span::before{
     background: #e4e4e9;
     border-radius: 25px;
     padding: 50px 50px;
+    padding-bottom: 125px;
 }
 
 .main-painel-of-1-1{
@@ -196,13 +219,14 @@ label input:checked + span::before{
 }
 
 .main-painel-of-1-black{
-    color: black;
+    color: #170F49;
 }
 
 .main-painel-of-2{
     background: #4A3AFF;
     border-radius: 25px;
     padding: 50px 50px;
+    padding-bottom: 125px;
 }
 
 .main-painel-of-2-white{
@@ -246,6 +270,91 @@ label input:checked + span::before{
     float: left;
     margin-left: 110px;
     margin-top: -40px;
+}
+
+.main-painel-of-3{
+    background: #e4e4e9;
+    border-radius: 25px;
+    padding: 30px 50px ;
+    margin: 0 297px;
+    padding-bottom: 100px;
+}
+
+
+.float-left{
+    float: left;
+    margin-left: 100px;
+    margin-top: -200px;
+}
+
+
+.distancie{
+    margin-top: 300px;
+}
+
+.distancie img{
+    float: left;
+}
+.text-sub-imag{
+    float: left;
+    margin-top: 87px;
+    margin-left: 60px;
+    margin-bottom: -500px;
+}
+
+.text-sub-imag img{
+    float: left;
+    margin-bottom: 30px;
+}
+
+.h7{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-sub-imag p{
+    clear: left;
+}
+
+.distancie-2{
+    margin-top: 1300px;
+    margin-left: 750px;
+    margin-bottom: 50px;
+}
+
+
+.main-section-email-alternativo{
+    background: #e4e4e9;
+    padding: 10px 0 10px 0px;
+    border-radius: 180px;
+
+}
+
+.main-section-email-alternativo button{
+    margin-left: 17px;
+}
+
+.main-section-email-alternativo input{
+    padding: 10px 150px 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.flex-1{
+    display: flex;
+}
+
+.float{
+    margin: 0 2px;
+}
+
+.div2-2{
+    background: #4A3AFF; 
+    width: 12%;
+    height: 7px; 
+    padding: 1px; 
+    margin-left: 410px;
+    margin-bottom: 50px;
 }
 
 
