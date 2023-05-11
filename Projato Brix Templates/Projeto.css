@@ -76,14 +76,24 @@ p{
     border-radius: 56px;
     color: white;
     border: 0;
+    cursor: pointer;
+}
+
+.button-pricipal:hover{
+    background: #695bff;
 }
 
 .button-alternat{
-    background: white;
+    background: rgb(216, 214, 214);
     box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
     border-radius: 56px;
     color: #4A3AFF;
     border: 0;
+    cursor: pointer;
+}
+
+.button-alternat:hover{
+    background: white;
 }
 
 .p{
@@ -141,12 +151,16 @@ label input:checked + span::before{
 
 .b5{
     background: #FF2D46;
-    box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
     border-radius: 56px;
     color: white;
     border: 0;
     padding: 20px 40px;
     margin-top: 40px;
+    cursor: pointer;
+}
+
+.b5:hover{
+    background: #ec5869;
 }
 
 .main-header-top button{
@@ -345,18 +359,43 @@ label input:checked + span::before{
 }
 
 .float{
-    margin: 0 2px;
+    position: absolute;
 }
 
 .div2-2{
     background: #4A3AFF; 
-    width: 12%;
+    width: 20.5%;
     height: 7px; 
     padding: 1px; 
-    margin-left: 410px;
-    margin-bottom: 50px;
+    margin-left: 310px;
+    margin-bottom: 100px;
+
+    position: relative;
 }
 
+.position{
+    
+    position: relative;
+    padding: 25px;
+    margin-left: 70px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+}
+
+.relativo{
+    position: absolute;
+    margin-top: -106px;
+    margin-left: 50px;
+}
+
+.relativo-letra{
+    margin-left: 115px;
+    margin-top: -87px;
+}
+
+.p-1-2{
+    margin-bottom: 35px;
+}
 
 /* Grid */
 
