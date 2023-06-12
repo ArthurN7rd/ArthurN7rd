@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logica de programação Javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <script>
+        
+        var caneta = new Object();
+        caneta.nome = 'Caneta'
+        caneta.preco = 'R$ 2,00'
+        caneta.amarzenado = '300 Unidade'
+
+        var caderno = new Object();
+        caderno.nome = 'Caderno'
+        caderno.preco = 'R$ 27,99'
+        caderno.amarzenado = '50 Unidade'
+
+        var borracha = new Object();
+        borracha.nome = 'Borracha'
+        borracha.preco = 'R$ 1,75'
+        borracha.amarzenado = '500 Unidade'
+
+        var msg = '';
+
+        var nomesDosProdutos = prompt("Digite o Item que Deseja");
+         switch( nomesDosProdutos ){
+            case 'caneta':
+                alert(msg += 'Nome: ' + caneta.nome + '  ' + 'Preço: ' + caneta.preco +  '  ' + 'Amarzenado: ' + caneta.amarzenado)
+                break
+            case 'caderno':
+                alert(msg += 'Nome: ' + caderno.nome + '  ' + 'Preço: ' + caderno.preco +  '  ' + 'Amarzenado: ' + caderno.amarzenado)
+                break
+            case 'borracha':
+                alert(msg += 'Nome: ' + borracha.nome + '  ' + 'Preço: ' + borracha.preco +  '  ' + 'Amarzenado: ' + borracha.amarzenado)
+                break            
+         }
+
+
+
+    </script>
+
+</body>
+
+</html>
