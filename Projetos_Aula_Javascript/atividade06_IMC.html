@@ -1,49 +1,26 @@
 <!doctype html>
 <html>
-
-<head>
-    <title>Programação Javascript</title>
-    <meta charset="utf-8">
-
-    <script>
-        (function (){
-            function calcularIMC(peso, altura){
-
-                return peso / (altura * altura);
-
-            };
-
-            function classificaIMC(imc){
-
-                if(imc <= 16.9){
-                    return "Muito abaixo do peso";
-                } else if(imc <= 18.4){
-                    return "Abaixo de peso";
-                } else if(imc <= 24.9){
-                    return "Normal";
-                } else if(imc <= 29.9){
-                    return "Acima do peso";
-                } else if(imc <= 34.9){
-                    return "Obesidade grau I";
-                } else if(imc <= 40){
-                    return "Obesidade grau II";
-                } else {
-                    return "Obesidade grau III";
-                }
-            }
-            var peso = 80;
-            var altura = 1.95;
-
-            var classificao = classificaIMC(calcularIMC(peso, altura));
-
-            console.log('Classificação IMC: ', classificao);
-        })();
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Curso Javascript Completo 2018</h1>
         
-    </script>
-</head>
-
-<body>
-    <h1>Programação com Javascript</h1>
-</body>
-
+        <main class="cmain" id="idmain">
+            <h2>subtitulo</h2>
+            <p id="pmain" class="pmain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </main> 
+        
+        <section class="csection" id="idsection">
+            <h3>subtitulo</h3>
+            <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </section>
+        
+        <script>
+            
+        </script>
+        
+    </body>
 </html>
