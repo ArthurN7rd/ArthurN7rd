@@ -8,7 +8,7 @@ main() {
 }
 
 double somar(double acumulador, double elemento) {
-  print("$acumulador $elemento");
+  print("$acumulador => $elemento");
   return acumulador + elemento;
 }
 
