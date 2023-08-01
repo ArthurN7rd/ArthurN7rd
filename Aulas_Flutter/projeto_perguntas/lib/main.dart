@@ -1,50 +1,73 @@
 import 'package:flutter/material.dart';
 import './questao.dart';
-import './respostas.dart';
+import './resposta.dart';
 
-void main() => runApp(PerguntaApp());
+void main() => runApp(const PerguntaApp());
 
 class _PerguntaAppState extends State<PerguntaApp> {
   var _perguntaSelecionada = 0;
+  final _perguntas = const [
+      {
+        'texto':'Qual é a sua cor favorita?',
+        'respostas':['Preto', 'Vermelho', 'Verde', 'Laranja',],
+      },
+      {
+        'texto':'Qual é o seu animal favorito?',  
+        'respostas':['Coelho', 'Cobra', 'Elefante', 'Leão',],
+      },
+      {
+        'texto':'Qual é o seu instrutor favorito?',  
+        'respostas':['Maria', 'João', 'Leo', 'Pedro',],
+      }
+    ];
 
   void _responder() {
-    setState(() {
-      _perguntaSelecionada++;  
-    });
-    print(_perguntaSelecionada);
+    if (temPerguntaSelecionada){
+      setState(() {
+      _perguntaSelecionada++;
+      });
+    }
   }
-  
+
+  bool get temPerguntaSelecionada {
+    return _perguntaSelecionada < _perguntas.length;
+  }
+
   @override
   Widget build(BuildContext context) {
-    final perguntas = [
-      'Qual é a sua cor favorita?',
-      'Qual é o seu animal favorito?',
-    ];
+
+    List<String> respostas = temPerguntaSelecionada 
+    ? _perguntas[_perguntaSelecionada]['respostas'] as List<String>
+    : [];
 
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Perguntas'),
         ),
-        body: Column(
-          children: [
-            Questao(perguntas[_perguntaSelecionada]),
-            Respostas('Resposta 1'),
-            Respostas('Resposta 2'),
-            Respostas('Resposta 3'),
+        body:temPerguntaSelecionada ? Column(
+          children: <Widget>[
+            Questao(_perguntas[_perguntaSelecionada]['texto'] as String),
+            ...respostas.map((t) => Resposta(t, _responder)).toList(),
           ],
-        ),
-      ),
-    );
+        ) : const Center(
+                child: Text(
+                  'Parabéns!',
+                  style: TextStyle(fontSize: 28,),
+                ),
+            ),
+    ),
+  );
   }
 }
 
 class PerguntaApp extends StatefulWidget {
+  const PerguntaApp({super.key});
 
+  @override
   _PerguntaAppState createState() {
-    return new _PerguntaAppState();
+    return _PerguntaAppState();
   }
 }
-
 
 
