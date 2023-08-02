@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import './questao.dart';
-import './resposta.dart';
+import './questionario.dart';
 import './resultado.dart';
 
 void main() => runApp(const PerguntaApp());
@@ -10,15 +9,30 @@ class _PerguntaAppState extends State<PerguntaApp> {
   final _perguntas = const [
       {
         'texto':'Qual é a sua cor favorita?',
-        'respostas':['Preto', 'Vermelho', 'Verde', 'Laranja',],
+        'respostas': [
+          {'texto': 'Preto', 'pontuacao': 7},
+          {'texto': 'Vermelho', 'pontuacao':5},
+          {'texto': 'Verde', 'pontuacao':8},
+          {'texto': 'Laranja', 'pontuacao':9},
+         ],
       },
       {
         'texto':'Qual é o seu animal favorito?',  
-        'respostas':['Coelho', 'Cobra', 'Elefante', 'Leão',],
+        'respostas': [
+          {'texto': 'Coelho', 'pontuacao': 3}, 
+          {'texto': 'Cobra', 'pontuacao': 7}, 
+          {'texto': 'Elefante', 'pontuacao': 9}, 
+          {'texto': 'Leão', 'pontuacao': 7},
+         ],
       },
       {
         'texto':'Qual é o seu instrutor favorito?',  
-        'respostas':['Maria', 'João', 'Leo', 'Pedro',],
+        'respostas': [
+          {'texto': 'Maria', 'pontuacao': 12}, 
+          {'texto': 'João', 'pontuacao': 7}, 
+          {'texto': 'Leo', 'pontuacao': 6}, 
+          {'texto': 'Pedro', 'pontuacao': 3},
+          ],
       }
     ];
 
@@ -36,22 +50,17 @@ class _PerguntaAppState extends State<PerguntaApp> {
 
   @override
   Widget build(BuildContext context) {
-
-    List<String> respostas = temPerguntaSelecionada 
-    ? _perguntas[_perguntaSelecionada]['respostas'] as List<String>
-    : [];
-
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Perguntas'),
         ),
-        body:temPerguntaSelecionada ? Column(
-          children: <Widget>[
-            Questao(_perguntas[_perguntaSelecionada]['texto'] as String),
-            ...respostas.map((t) => Resposta(t, _responder)).toList(),
-          ],
-        ) : Resultado(),
+        body:temPerguntaSelecionada 
+            ? Questionario(
+                perguntas: _perguntas, 
+                perguntaSelecionada: _perguntaSelecionada, 
+                quandoResponder: _responder,
+              ) : Resultado(),
     ),
   );
   }
