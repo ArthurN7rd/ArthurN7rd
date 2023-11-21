@@ -8,7 +8,7 @@ body{
 }
 
 .tudo{
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 header {
@@ -36,34 +36,62 @@ h1{
 }
 
 h2{
-    font-size: 16px;
     color: #212529;
-    letter-spacing: 4px;
-    margin-bottom: -15px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
 }
 
 h3{
     color: #F26122;
     font-size: 28px;
+    margin-left: 110px;
+    font-weight: 500;
+    line-height: 28.8px; 
 }
 
 p{
     color: #19191A;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 32.64px;
+    font-style: normal;
 }
 
 .position-absolute{
     position: absolute;
 }
 
+.flex{
+    display: flex;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 479px;
+}
+
+.f-div{
+
+}
+
 .passos-projeto{
     background: #F26426;
-    width: 1728px;
-    height: 359px;
+    max-width: auto;
+    height: 360px;
+    justify-content: center;
 }
 
 .circulos{
     background: #FFF;
+    margin: 50px;
+    padding: 70px 90px;
+    border-radius: 50%; 
 }
 
 .img-fundo-png{
@@ -79,7 +107,8 @@ p{
 }
 
 .tela_boas_vindas{
-    margin-top: -650px;
+    position: absolute; bottom: 50%; left: 30%;
+    transform: translate(-40%, -10%);  
 }
 
 .tela_boas_vindas, p{
@@ -137,6 +166,7 @@ p{
     cursor: pointer;
     margin-left: 200px;
     margin-top: 70px;
+    padding: 200px;
 }
 
 .b1{
@@ -147,11 +177,31 @@ p{
 .b2{
     padding: 20px 90px 20px 90px; 
     border-radius: 7px;  
+    margin-left: 820px;
+    margin-bottom: 100px;
 }
 
 .main-header-top button{
     margin: 0px;
     margin-left: 700px;
+}
+
+/*grafico*/
+
+.parte-grafico{
+    width: 335.996px;
+    height: 314.13px;
+    margin-top: 100px;
+    background: #000;
+    border-radius: 20px;
+}
+
+.p-grafico{
+
+}
+
+.n-grafico{
+
 }
 
 /* colores */
