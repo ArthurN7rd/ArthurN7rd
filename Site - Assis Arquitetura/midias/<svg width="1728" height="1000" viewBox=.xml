@@ -1,8 +1,0 @@
-<i class="fa-solid fa-arrow-right img-flecha-botao"></i>
-
-.img-flecha-botao{
-    font-size: 40px;
-    color: #FFF;
-    padding-left: 365px;
-    padding-top: 80px;
-}
